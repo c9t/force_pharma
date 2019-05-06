@@ -1,0 +1,56 @@
+.header
+  position: relative
+  background-color: $white
+  opacity: .8
+  border-bottom: 2px solid $black
+
+.header_wrapper
+  display: flex
+  justify-content: space-between
+
+.header_logo
+  a
+    display: flex
+    height: 100%
+    width: 100%
+    padding: 20px 0
+    transition: all .5s
+    &:hover
+      opacity: .8
+  img
+    object-fit: cover
+
+.header_menu
+  display: flex
+  align-items: flex-end
+
+.header_nav
+  display: flex
+  margin-bottom: 0
+  li
+    list-style: none
+    width: 250px
+    height: 80px
+    a
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      width: 100%
+      height: 100%
+      font-family: RobotoSlab-Light, sans-serif
+      font-size: $fz_small
+      text-decoration: none
+      color: $gray_1
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 0
+        background-color: $blue
+        transition: 0.3s
+        &:hover
+          height: 100%
