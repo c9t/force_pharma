@@ -3,6 +3,7 @@
   background-color: $white
   opacity: .8
   border-bottom: 2px solid $black
+  z-index: 20
 
 .header_wrapper
   display: flex
@@ -29,28 +30,34 @@
   margin-bottom: 0
   li
     list-style: none
-    width: 250px
-    height: 80px
     a
       position: relative
       display: flex
       justify-content: center
       align-items: center
       text-align: center
-      width: 100%
-      height: 100%
+      width: 250px
+      height: 80px
+      padding-bottom: 20px
       font-family: RobotoSlab-Light, sans-serif
       font-size: $fz_small
       text-decoration: none
       color: $gray_1
+      z-index: 9
+      transition: all 1s
+      &:hover
+        color: $white
       &:after
         content: ''
+        display: block
         position: absolute
         bottom: 0
         left: 0
         width: 100%
         height: 0
         background-color: $blue
-        transition: 0.3s
-        &:hover
+        transition: all .4s ease-in-out
+        z-index: -9
+      &:hover
+        &:after
           height: 100%
