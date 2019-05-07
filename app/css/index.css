@@ -26,7 +26,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1124px;
+  max-width: 1224px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
@@ -66,6 +66,14 @@ p {
   -o-object-fit: cover;
      object-fit: cover; }
 
+@media (max-width: 1250px) {
+  .mobile_logo {
+    background-image: url("../img/header_logo_2.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .header_logo {
+    display: none; } }
+
 .header_menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,9 +107,8 @@ p {
           -ms-flex-align: center;
               align-items: center;
       text-align: center;
-      width: 250px;
+      width: 200px;
       height: 80px;
-      padding-bottom: 20px;
       font-family: RobotoSlab-Light, sans-serif;
       font-size: -webkit-calc(10px + .52vw);
       font-size: calc(10px + .52vw);
@@ -128,3 +135,86 @@ p {
         z-index: -9; }
       .header_nav li a:hover:after {
         height: 100%; }
+
+.header_social_button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .header_social_button:hover {
+    opacity: .8; }
+
+.header_language {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -webkit-calc(15px + 1.04vw);
+  margin-right: calc(15px + 1.04vw); }
+
+.header_selector {
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  width: 55px;
+  font-family: RobotoSlab-Regular, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.header_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5px;
+  cursor: pointer;
+  font-family: RobotoSlab-Regular, sans-serif;
+  font-weight: bold;
+  font-size: -webkit-calc(10px + .52vw);
+  font-size: calc(10px + .52vw); }
+
+.header_item:hover {
+  color: #3eb5f1; }
+
+.header_item:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+  content: '';
+  height: 16px;
+  width: 16px; }
+
+.header_selector {
+  margin-left: -10px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .header_selector a {
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    display: block;
+    background-color: #000000;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+    .header_selector a:hover {
+      color: #3eb5f1; }
+
+.header_language:hover .header_selector {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  display: block; }

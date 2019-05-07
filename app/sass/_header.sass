@@ -21,6 +21,14 @@
   img
     object-fit: cover
 
+@media (max-width: 1250px)
+  .mobile_logo
+    background-image: url("../img/header_logo_2.png")
+    background-repeat: no-repeat
+    background-position: center
+  .header_logo
+    display: none
+
 .header_menu
   display: flex
   align-items: flex-end
@@ -36,9 +44,8 @@
       justify-content: center
       align-items: center
       text-align: center
-      width: 250px
+      width: 200px
       height: 80px
-      padding-bottom: 20px
       font-family: RobotoSlab-Light, sans-serif
       font-size: $fz_small
       text-decoration: none
@@ -61,3 +68,61 @@
       &:hover
         &:after
           height: 100%
+
+.header_social_button
+  display: flex
+  align-items: center
+  transition: all .5s
+  &:hover
+    opacity: .8
+
+.header_language
+  position: relative
+  display: flex
+  align-items: center
+  margin-right: $margin_medium
+
+.header_selector
+  display: none
+  position: absolute
+  bottom: -30px
+  width: 55px
+  font-family: RobotoSlab-Regular, sans-serif
+  font-weight: bold
+  transition: all .5s
+
+.header_item
+  display: flex
+  padding-right: 5px
+  cursor: pointer
+  font-family: RobotoSlab-Regular, sans-serif
+  font-weight: bold
+  font-size: $fz_small
+
+.header_item
+  &:hover
+    color: $blue
+  &:after
+    background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center
+    content: ''
+    height: 16px
+    width: 16px
+
+.header_selector
+  margin-left: -10px
+  transition: all .5s
+  a
+    color: $white
+    padding: 5px 10px 5px 10px
+    text-decoration: none
+    display: block
+    background-color: $black
+    transition: all .5s
+    &:hover
+      color: $blue
+
+.header_language
+  &:hover
+    .header_selector
+      transition: all .5s
+      display: block
