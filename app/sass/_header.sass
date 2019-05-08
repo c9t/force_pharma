@@ -3,35 +3,88 @@
   background-color: $white
   opacity: .8
   border-bottom: 2px solid $black
+  box-shadow: 0px -3px 34px 0px $black
   z-index: 20
+
+@media (max-width: 1280px)
+  .header
+    height: 100px
+  .header_wrapper
+    height: 100px
+
+@media (max-width: 812px)
+  .header
+    height: 70px
+  .header_wrapper
+    height: 70px
 
 .header_wrapper
   display: flex
   justify-content: space-between
 
 .header_logo
+  transition: all .5s
   a
     display: flex
+    align-items: center
     height: 100%
     width: 100%
     padding: 20px 0
     transition: all .5s
     &:hover
+      cursor: auto
       opacity: .8
   img
+    height: 100% !important
+    max-width: 100%
     object-fit: cover
+    transition: all .5s
 
-@media (max-width: 1250px)
-  .mobile_logo
-    background-image: url("../img/header_logo_2.png")
-    background-repeat: no-repeat
-    background-position: center
-  .header_logo
-    display: none
+.header_menu_burger
+  display: none
+  a
+    position: relative
+    display: flex
+    width: 40px
+    height: 20px
+    span,&:before,&:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 3px
+      background-color: $blue
+      transition: all .3s
+    span
+      top: calc(50% - 2px)
+      transition: all .3s
+    &:after
+      bottom: 0
+    &:before
+      top: 0
+
+@media (max-width: 1280px)
+  .header_menu_burger
+    display: flex
+    align-items: center
+
+.nav_add
+  a
+    span
+      transform: rotate(45deg)
+    &:before
+      top: calc(50% - 2px)
+      transform: rotate(45deg)
+    &:after
+      bottom: calc(50% - 2px)
+      transform: rotate(-45deg)
 
 .header_menu
   display: flex
   align-items: flex-end
+
+@media (max-width: 1280px)
+  .header_menu
+    display: none
 
 .header_nav
   display: flex
@@ -46,7 +99,7 @@
       text-align: center
       width: 200px
       height: 80px
-      font-family: RobotoSlab-Light, sans-serif
+      font-family: RobotoSlab-Regular, sans-serif
       font-size: $fz_small
       text-decoration: none
       color: $gray_1
@@ -64,7 +117,7 @@
         height: 0
         background-color: $blue
         transition: all .4s ease-in-out
-        z-index: -9
+        z-index: -10
       &:hover
         &:after
           height: 100%

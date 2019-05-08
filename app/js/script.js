@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-    var navigationBurger = $('.navigation_burger'),
-        headerMenu = $('.header_menu__content');
+    var navigationBurger = $('.header_menu_burger'),
+        headerMenu = $('.header_menu');
 
     navigationBurger.on('click', function (e) {
         e.preventDefault();
