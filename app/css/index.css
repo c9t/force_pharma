@@ -32,7 +32,7 @@ p {
   padding-right: 15px; }
 
 .about_section {
-  height: 41.66vw;
+  max-height: 39.01vw;
   position: relative; }
 
 .about_item {
@@ -49,17 +49,62 @@ p {
       -ms-flex-align: center;
           align-items: center; }
   .about_item img {
-    display: block; }
+    display: block;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+    max-width: 100%;
+    height: auto; }
 
 .about_img_content {
   position: absolute;
-  max-width: 470px; }
+  max-width: 800px;
+  padding-right: -webkit-calc(50px + 10.41vw);
+  padding-right: calc(50px + 10.41vw); }
   .about_img_content h1 {
     font-family: RobotoSlab-Bold, sans-serif;
+    font-size: -webkit-calc(16px + 1.56vw);
+    font-size: calc(16px + 1.56vw);
     color: #ffffff; }
   .about_img_content p {
     font-family: RobotoSlab-Light, sans-serif;
     color: #ffffff; }
+
+@media (max-width: 850px) {
+  .about_img_content {
+    text-align: center;
+    padding: 0 20px; } }
+
+.about_slider.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  .about_slider.owl-carousel .owl-dots .owl-dot {
+    margin: 0 10px;
+    outline: none;
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s; }
+    .about_slider.owl-carousel .owl-dots .owl-dot span {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100px;
+      height: 5px;
+      background-color: #ffffff;
+      opacity: .4; }
+  .about_slider.owl-carousel .owl-dots .active {
+    background-color: #ffffff; }
 
 .header {
   position: fixed;
@@ -90,6 +135,10 @@ p {
 
 @media (max-width: 1280px) {
   .header {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 100px;
     opacity: 1;
     -webkit-box-shadow: 0 0 0 0;
@@ -143,7 +192,9 @@ p {
        object-fit: cover;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
-    transition: all .5s; }
+    transition: all .5s;
+    -webkit-filter: saturate(150%);
+            filter: saturate(150%); }
 
 .header_menu_burger {
   display: none; }
@@ -378,6 +429,9 @@ p {
   transition: all .5s; }
   .header_social_button:hover {
     opacity: .8; }
+  .header_social_button img {
+    -webkit-filter: saturate(150%);
+            filter: saturate(150%); }
 
 .header_language {
   position: relative;

@@ -22,6 +22,10 @@
 
 @media (max-width: 1280px)
   .header
+    position: relative
+    top: 0
+    right: 0
+    left: 0
     height: 100px
     opacity: 1
     box-shadow: 0 0 0 0
@@ -56,6 +60,7 @@
     max-width: 100%
     object-fit: cover
     transition: all .5s
+    filter: saturate(150%)
 
 .header_menu_burger
   display: none
@@ -204,6 +209,8 @@
   transition: all .5s
   &:hover
     opacity: .8
+  img
+    filter: saturate(150%)
 
 .header_language
   position: relative

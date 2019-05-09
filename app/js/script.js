@@ -21,9 +21,12 @@ $( document ).ready(function() {
 
     });
 
-        $(".testimonials_slider").owlCarousel({
+        $(".about_slider").owlCarousel({
             items: 1,
-            nav: true,
+            autoWidth: true,
+            autoplay: true,
+            mouseDrag: false,
+            loop: true,
             dots: true,
         });
 });
