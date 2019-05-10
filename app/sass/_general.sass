@@ -17,23 +17,20 @@ p
 
 //--------------about_section
 .about_section
-  max-height: 39.01vw
+  position: relative
+
+.about_content
   position: relative
 
 .about_item
   display: flex
-  justify-content: flex-end
-  align-items: center
   img
-    display: block
+    object-fit: cover
     filter: brightness(70%)
     max-width: 100%
     height: auto
 
 .about_img_content
-  position: absolute
-  max-width: 800px
-  padding-right: calc(50px + 10.41vw)
   h1
     font-family: RobotoSlab-Bold, sans-serif
     font-size: $fz_large
@@ -68,3 +65,7 @@ p
         opacity: .4
     .active
       background-color: $white
+
+.about_under_content
+  display: flex
+  flex-direction: column
