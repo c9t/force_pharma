@@ -24,7 +24,7 @@ $( document ).ready(function() {
         $(".about_slider").owlCarousel({
             items: 1,
             autoWidth: true,
-            autoplay: false,
+            autoplay: true,
             mouseDrag: false,
             loop: true,
             dots: true,

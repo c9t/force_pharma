@@ -35,7 +35,11 @@ p {
   position: relative; }
 
 .about_content {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .about_item {
   display: -webkit-box;
@@ -517,11 +521,6 @@ p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -533,7 +532,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin: 0 15px -webkit-calc(10px + 1.04vw) 15px;
-  margin: 0 15px calc(10px + 1.04vw) 15px; }
+  margin: 0 15px calc(10px + 1.04vw) 15px;
+  height: 80px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 340px;
+      -ms-flex: 0 1 340px;
+          flex: 0 1 340px; }
   .types_button_section a {
     text-decoration: none;
     color: #ffffff;
@@ -545,6 +549,37 @@ p {
   .types_button_section:hover .types_button_right img {
     width: 0;
     height: 0; }
+
+@media (max-width: 1290px) {
+  .types_button_section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 350px;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px;
+    max-width: 355px; } }
+
+@media (max-width: 1185px) {
+  .types_button_section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 400px;
+        -ms-flex: 1 1 400px;
+            flex: 1 1 400px;
+    max-width: 450px; } }
+
+@media (max-width: 918px) {
+  .types_button_section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 350px;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px; } }
+
+@media (max-width: 805px) {
+  .types_button_section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 450px;
+        -ms-flex: 1 1 450px;
+            flex: 1 1 450px;
+    max-width: 700px; } }
 
 .types_button {
   position: relative;
@@ -560,8 +595,12 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 290px;
-  height: 80px;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
   background-color: #3eb5f1;
   -webkit-border-radius: 5px 0 0 5px;
           border-radius: 5px 0 0 5px; }

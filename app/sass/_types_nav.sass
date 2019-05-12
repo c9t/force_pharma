@@ -1,13 +1,14 @@
 .types_section_wrapper
   display: flex
   justify-content: center
-  flex-direction: row
   flex-wrap: wrap
   padding-top: 30px
 
 .types_button_section
   display: flex
   margin: 0 15px $margin_small 15px
+  height: 80px
+  flex: 0 1 340px
   a
     text-decoration: none
     color: $white
@@ -24,13 +25,33 @@
         width: 0
         height: 0
 
+@media (max-width: 1290px)
+  .types_button_section
+    flex: 1 1 350px
+    max-width: 355px
+
+@media (max-width: 1185px)
+  .types_button_section
+    flex: 1 1 400px
+    max-width: 450px
+
+@media (max-width: 918px)
+  .types_button_section
+    flex: 1 1 350px
+
+@media (max-width: 805px)
+  .types_button_section
+    flex: 1 1 450px
+    max-width: 700px
+
 .types_button
   position: relative
   display: flex
   justify-content: center
   align-items: center
-  width: 290px
-  height: 80px
+  text-align: center
+  padding: 20px
+  flex: 1 1 0
   background-color: $blue
   border-radius: 5px 0 0 5px
   h3
