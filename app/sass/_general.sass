@@ -7,6 +7,9 @@ body
 p
   line-height: 1.65
 
+img
+  filter: saturate(150%)
+
 .container
   width: 100%
   max-width: 1224px
@@ -14,18 +17,12 @@ p
   padding-left: 15px
   padding-right: 15px
 
-
 //--------------about_section
-.about_section
-  position: relative
-
-.about_content
-  position: relative
-  display: flex
-
 .about_item
   display: flex
-
+  justify-content: flex-end
+  align-items: center
+  position: relative
   img
     object-fit: cover
     filter: brightness(70%)
@@ -33,6 +30,10 @@ p
     height: auto
 
 .about_img_content
+  position: absolute
+  right: 600px
+  text-align: left
+  max-width: 400px
   h1
     font-family: RobotoSlab-Bold, sans-serif
     font-size: $fz_large
@@ -71,3 +72,53 @@ p
 .about_under_content
   display: flex
   flex-direction: column
+
+//--------------content_section
+.content_section
+  background-color: #f5f5f5
+
+.content_section_wrapper
+  display: flex
+  align-items: center
+  flex-direction: column
+  flex-wrap: wrap
+
+.content_section_wrapper
+  padding-top: $margin_small
+  h2
+    font-family: RobotoSlab-Bold, sans-serif
+    font-size: $fz_large
+  p
+    font-family: RobotoSlab-Light, sans-serif
+
+.content_items
+  display: flex
+  align-items: center
+
+@media (max-width: 1280px)
+  .content_items
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    transition: all .5s
+
+.content_img
+  img
+    object-fit: cover
+    display: block
+    max-width: 748px
+    height: auto
+
+@media (max-width: 1280px)
+  .content_img
+    img
+      display: block
+      max-width: 100%
+      height: auto
+
+
+//--------------map_section
+.map_section
+  iframe
+    display: block
