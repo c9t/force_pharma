@@ -1,14 +1,62 @@
 .about_page_section
+  position: relative
   display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  img
-    max-width: 100%
-    filter: brightness(90%)
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: url("../img/about_page_section.jpg")
+    background-position: center bottom
+    background-size: cover
 
-.about_page_items
+.about_page_items_top
+  position: relative
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
   justify-content: center
+  color: $white
+  font-family: RobotoSlab-Bold, sans-serif
+  min-height: 30vw
+  padding: calc(50px + 7.81vw) 0 $padding_small 0
+  z-index: 2
+
+.about_page_top
+  display: flex
+  justify-content: center
+  width: 100%
+
+.about_page_bottom
+  display: flex
+  max-width: 650px
+
+.about_page_navigation_wrapper
+  display: flex
+  align-items: center
+  font-family: RobotoSlab-Light, sans-serif
+  font-size: 12px
+  margin-top: $margin_small
+  a
+    text-decoration: none
+    color: $black
+  p
+    margin: 0
+  span
+    color: $blue
+
+.about_navigation_link_first
+  transition: all .5s
+  &:hover
+    color: $blue
+
+.about_page_text
+  font-family: RobotoSlab-Light, sans-serif
+
+.about_page_text_middle
+  img
+    margin: $margin_small 0
+    width: 100%
+    height: auto
