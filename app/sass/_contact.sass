@@ -1,0 +1,83 @@
+.contact_page_section
+  position: relative
+  display: flex
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: url("../img/contact_page_section_img_1.jpg")
+    background-position: center bottom
+    background-size: cover
+
+.contact_page_items_top
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: $white
+  font-family: RobotoSlab-Bold, sans-serif
+  min-height: 30vw
+  padding: calc(50px + 7.81vw) 0 $padding_small 0
+  z-index: 2
+
+.contact_page_top
+  display: flex
+  justify-content: center
+  width: 100%
+
+.contact_text_wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding: 0 $padding_large
+  width: 100%
+  a
+    font-family: RobotoSlab-Light, sans-serif
+    font-size: $fz_small
+    color: $white
+    text-decoration: none
+
+@media (max-width: 1280px)
+  .contact_text_wrapper
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.contact_text_left
+  border-right: 2px solid $white
+  padding-right: $padding_medium
+  a
+    p
+      margin-top: 0
+
+@media (max-width: 1280px)
+  .contact_text_left
+    border: 0
+    padding: 0 0 20px 0
+    a
+      p:not(:first-child)
+        margin: 0px
+
+.contact_text_right
+  border-left: 2px solid $white
+  padding-left: $padding_medium
+  height: 98px
+  a
+    height: auto
+
+@media (max-width: 1280px)
+  .contact_text_middle
+    display: flex
+    align-items: center
+    height: 100px
+    border-top: 2px solid $white
+    border-bottom: 2px solid $white
+
+@media (max-width: 1280px)
+  .contact_text_right
+    border: 0
+    padding: 20px 0 0 0
