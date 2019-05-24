@@ -1,0 +1,38 @@
+.controll_page_section
+  position: relative
+  display: flex
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: url("../img/controll_page_section_img_1.jpg")
+    background-position: center bottom
+    background-size: cover
+
+.controll_page_items_top
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: $white
+  font-family: RobotoSlab-Bold, sans-serif
+  min-height: 30vw
+  padding: calc(50px + 7.81vw) 0 $padding_small 0
+  z-index: 2
+
+.controll_page_top
+  display: flex
+  justify-content: center
+  width: 100%
+
+.controll_menu_wrapper
+  li
+    font-family: RobotoSlab-Light, sans-serif
+    padding-top: 10px
+    color: $blue
+    a
+      color: $black

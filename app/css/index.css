@@ -502,6 +502,9 @@ img {
       .header_nav li a:hover:after {
         height: 100%; }
 
+.last_child a {
+  width: 125px !important; }
+
 .header_menu_right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -944,10 +947,74 @@ img {
     color: #3eb5f1; }
 
 .about_page_text {
-  font-family: RobotoSlab-Light, sans-serif; }
+  font-family: RobotoSlab-Light, sans-serif;
+  margin-bottom: -webkit-calc(10px + 1.04vw);
+  margin-bottom: calc(10px + 1.04vw); }
 
 .about_page_text_middle img {
   margin: -webkit-calc(10px + 1.04vw) 0;
   margin: calc(10px + 1.04vw) 0;
   width: 100%;
   height: auto; }
+
+.controll_page_section {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .controll_page_section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/controll_page_section_img_1.jpg");
+    background-position: center bottom;
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+.controll_page_items_top {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-family: RobotoSlab-Bold, sans-serif;
+  min-height: 30vw;
+  padding: -webkit-calc(50px + 7.81vw) 0 -webkit-calc(20px + 3.12vw) 0;
+  padding: calc(50px + 7.81vw) 0 calc(20px + 3.12vw) 0;
+  z-index: 2; }
+
+.controll_page_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+.controll_menu_wrapper li {
+  font-family: RobotoSlab-Light, sans-serif;
+  padding-top: 10px;
+  color: #3eb5f1; }
+  .controll_menu_wrapper li a {
+    color: #000000; }
