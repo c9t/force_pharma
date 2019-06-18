@@ -11,16 +11,16 @@ $( document ).ready(function() {
     $(window).scroll(function() {
 
         if ($(this).scrollTop() > 60){
-            $('header').addClass("header_scroll");
+            $('.header').addClass("header_scroll");
         }  else{
-            $('header').removeClass("header_scroll");
+            $('.header').removeClass("header_scroll");
         }
     });
 
         $(".about_slider").owlCarousel({
             items: 1,
             autoWidth: true,
-            autoplay: true,
+            autoplay: false,
             mouseDrag: false,
             loop: true,
             dots: true,
