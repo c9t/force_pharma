@@ -12,11 +12,11 @@
 .header_scroll
   position: fixed
   background-color: $white
+  opacity: 1
   width: 100%
 
 @media (max-width: 1280px)
   .header
-    position: relative
     top: 0
     right: 0
     left: 0
@@ -39,8 +39,24 @@
   height: 168px
   transition: all .8s ease-in-out
 
+@media (max-width: 1280px)
+  .header_wrapper
+    height: 100px
+
+@media (max-width: 812px)
+  .header_wrapper
+    height: 70px
+
 .header_scroll_wrapper
   height: 80px
+
+@media (max-width: 1280px)
+  .header_scroll_wrapper
+    height: 100px
+
+@media (max-width: 812px)
+  .header_scroll_wrapper
+    height: 70px
 
 .header_logo
   transition: all .5s
