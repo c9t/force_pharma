@@ -12,8 +12,10 @@ $( document ).ready(function() {
 
         if ($(this).scrollTop() > 60){
             $('.header').addClass("header_scroll");
+            $('.header_wrapper').addClass("header_scroll_wrapper");
         }  else{
             $('.header').removeClass("header_scroll");
+            $('.header_wrapper').removeClass("header_scroll_wrapper");
         }
     });
 
